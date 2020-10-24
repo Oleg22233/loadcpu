@@ -1,0 +1,11 @@
+[Unit]
+Description=Description for echodate script
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/tmp/loadcpu.sh
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target

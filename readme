@@ -1,0 +1,41 @@
+установка демона :
+
+скопировать  loadcpu.sh в /tmp из папки demon
+
+выполнить: chmod +x /tmp/loadcpu.sh
+
+Конфиг юнита скопировать loadcpu.service  в   /etc/systemd/system из  паки demon
+
+
+Перезагружаем демона:
+# systemctl daemon-reload
+
+
+Добавим в автозагрузку:
+# systemctl enable loadcpu.service
+
+Включение:
+# systemctl start loadcpu.service
+
+Статус:
+# systemctl status loadcpu.service
+
+Установить сервер pip install --user django-polls/dist/django-loadcpu-0.1.tar.gz
+Запустить сервер командой:   python manage.py runserver
+
+
+перейти на  страницу с  данными:  http://127.0.0.1:8000/loadcpu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
